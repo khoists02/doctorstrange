@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="./assets/custom.css">
+  <link rel="stylesheet" href="./assets/index.css">
+  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="./assets/bootstrap.min.css">
+  <script>
+    function GTranslateGetCurrentLang() { var keyValue = document.cookie.match('(^|;) ?googtrans=([^;]*)(;|$)'); return keyValue ? keyValue[2].split('/')[2] : null; }
+    function gt_loadScript(url, callback) { var script = document.createElement("script"); script.type = "text/javascript"; if (script.readyState) { script.onreadystatechange = function () { if (script.readyState == "loaded" || script.readyState == "complete") { script.onreadystatechange = null; callback() } } } else { script.onload = function () { callback() } } script.src = url; document.getElementsByTagName("head")[0].appendChild(script) }
+    var gtSwitcherJS = function ($) {
+      $('.switcher .selected').click(function () { $('.switcher .option a img').each(function () { if (!$(this)[0].hasAttribute('src')) $(this).attr('src', $(this).attr('data-gt-lazy-src')) }); if (!($('.switcher .option').is(':visible'))) { $('.switcher .option').stop(true, true).delay(100).slideDown(500); $('.switcher .selected a').toggleClass('open') } });
+      $('.switcher .option').bind('mousewheel', function (e) { var options = $('.switcher .option'); if (options.is(':visible')) options.scrollTop(options.scrollTop() - e.originalEvent.wheelDelta); return false; });
+      $('body').not('.switcher').bind('click', function (e) { if ($('.switcher .option').is(':visible') && e.target != $('.switcher .option').get(0)) { $('.switcher .option').stop(true, true).delay(100).slideUp(500); $('.switcher .selected a').toggleClass('open') } });
+      if (typeof GTranslateGetCurrentLang == 'function') if (GTranslateGetCurrentLang() != null) $(document).ready(function () { var lang_html = $('div.switcher div.option').find('img[alt="' + GTranslateGetCurrentLang() + '"]').parent().html(); if (typeof lang_html != 'undefined') $('div.switcher div.selected a').html(lang_html.replace('data-gt-lazy-', '')); });
+    };
+    gt_loadScript("//code.jquery.com/jquery-1.12.4.min.js", function () { jQuery_gtranslate = jQuery.noConflict(true); gtSwitcherJS(jQuery_gtranslate); });
+  </script>
+</head>
+
+<body>
+  <div id="PageContainer" class="page-container">
+    <div class="transition-body" data-test="index">
+      <div id="SearchDrawer" class="search-bar drawer drawer--top critical-hidden" role="dialog" aria-modal="true"
+        aria-label="Search our store" data-predictive-search-drawer="">
+        <div class="search-bar__interior">
+          <div class="search-form__container" data-search-form-container="">
+            <form class="search-form search-bar__form" action="/search" method="get" role="search">
+              <div class="search-form__input-wrapper">
+                <input type="text" name="q" placeholder="Search our store" role="combobox" aria-autocomplete="list"
+                  aria-owns="predictive-search-results" aria-expanded="false" aria-label="Search our store"
+                  aria-haspopup="listbox" class="search-form__input search-bar__input"
+                  data-predictive-search-drawer-input="" data-base-url="/search">
+                <input type="hidden" name="options[prefix]" value="last" aria-hidden="true">
+                <div class="predictive-search-wrapper predictive-search-wrapper--drawer"
+                  data-predictive-search-mount="drawer"></div>
+              </div>
+
+              <button class="search-bar__submit search-form__submit" type="submit" data-search-form-submit="">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search"
+                  viewBox="0 0 37 40">
+                  <path
+                    d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
+                  </path>
+                </svg>
+                <span class="icon__fallback-text">Search</span>
+              </button>
+            </form>
+
+            <div class="search-bar__actions">
+              <button type="button" class="btn--link search-bar__close js-drawer-close">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close"
+                  viewBox="0 0 40 40">
+                  <path
+                    d="M23.868 20.015L39.117 4.78c1.11-1.108 1.11-2.77 0-3.877-1.109-1.108-2.773-1.108-3.882 0L19.986 16.137 4.737.904C3.628-.204 1.965-.204.856.904c-1.11 1.108-1.11 2.77 0 3.877l15.249 15.234L.855 35.248c-1.108 1.108-1.108 2.77 0 3.877.555.554 1.248.831 1.942.831s1.386-.277 1.94-.83l15.25-15.234 15.248 15.233c.555.554 1.248.831 1.941.831s1.387-.277 1.941-.83c1.11-1.109 1.11-2.77 0-3.878L23.868 20.015z"
+                    class="layer"></path>
+                </svg>
+                <span class="icon__fallback-text">translation missing: en.general.search.close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-section-id="header--v2" data-section-type="header-section" data-header-section=""
+        style="background-color: rgb(10, 181, 219);">
+
+
+        <style>
+          .announcement-bar {
+            background-color: #ffcb20;
+          }
+
+          .announcement-bar__link:hover {
+
+
+
+
+            background-color: #ebb400;
+
+          }
+
+          .announcement-bar__message {
+            color: #010101;
+          }
+        </style>
+
+        <div class="announcement-bar" role="region"
+          aria-label="translation missing: en.sections.header.announcement_bar_label"><a href="https://BabyDogeNFT.com"
+            class="announcement-bar__link">
+            <p class="announcement-bar__message">Click Here For BabyDogeNFT.com</p>
+          </a></div>
+
+
+
+
+        <header class="mobile-header site-header container logo--left home_header_menu" role="banner">
+          <div class="grid grid--no-gutters grid--table site-header__mobile-nav">
+
+
+            <div class="mobile-display-contents grid__item medium-up--one-quarter logo-align--left">
+
+
+              <h1 class="h2 site-header__logo mb-0 ps-0">
+
+
+                <a href="/" class="site-header__logo-image">
+
+                  <img class="js show-desktop-logo lazyautosizes ls-is-cached lazyloaded"
+                    src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_300x300.png?v=1634498789"
+                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="4.32"
+                    data-sizes="auto" alt="Baby Doge Coin" style="max-width: 225px"
+                    data-srcset="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_180x.png?v=1634498789 180w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_360x.png?v=1634498789 360w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_540x.png?v=1634498789 540w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_720x.png?v=1634498789 720w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_900x.png?v=1634498789 900w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1080x.png?v=1634498789 1080w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1296x.png?v=1634498789 1296w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1512x.png?v=1634498789 1512w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1728x.png?v=1634498789 1728w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_2048x.png?v=1634498789 2048w"
+                    sizes="225px"
+                    srcset="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_180x.png?v=1634498789 180w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_360x.png?v=1634498789 360w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_540x.png?v=1634498789 540w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_720x.png?v=1634498789 720w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_900x.png?v=1634498789 900w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1080x.png?v=1634498789 1080w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1296x.png?v=1634498789 1296w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1512x.png?v=1634498789 1512w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_1728x.png?v=1634498789 1728w, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_2048x.png?v=1634498789 2048w">
+                  <img
+                    src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_300x300.png?v=1634498789"
+                    data-src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_{width}x.png?v=1634498789"
+                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="4.32"
+                    data-sizes="auto" alt="Baby Doge Coin" style="max-width: 160px" class="show-mobile-logo">
+                  <noscript>
+
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_225x.png?v=1634498789"
+                      srcset="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_225x.png?v=1634498789 1x, //cdn.shopify.com/s/files/1/0388/4833/1916/files/baby_doge_logo_retro_225x@2x.png?v=1634498789 2x"
+                      alt="Baby Doge Coin" style="max-width: 225px;">
+                  </noscript>
+                </a>
+
+
+              </h1>
+
+            </div>
+
+
+            <nav class="grid__item medium-up--three-quarters small--hide" id="AccessibleNav" role="navigation">
+
+
+              <ul class="site-nav list--inline" id="SiteNav">
+
+
+
+
+
+                <li>
+                  <a href="#About_section" class="site-nav__link site-nav__link--main">
+                    <span class="site-nav__label">Crypto Card</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                  <a href="#Our_document_section" class="site-nav__link site-nav__link--main">
+                    <span class="site-nav__label">Tokenomics</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                  <a href="#Partner_section_1630598456eb27ba2a" class="site-nav__link site-nav__link--main">
+                    <span class="site-nav__label">Charity</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                  <a href="#our_document_1630594366b9f87c48" class="site-nav__link site-nav__link--main">
+                    <span class="site-nav__label">Documents</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                  <a href="#Tab_section" class="site-nav__link site-nav__link--main">
+                    <span class="site-nav__label">Roadmap</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li>
+                  <a href="#Contact_us_section" class="site-nav__link site-nav__link--main">
+                    <span class="site-nav__label">Contact</span>
+                  </a>
+                </li>
+
+
+
+                <!--  Custom Menu Link to ecom-domain  -->
+                <!-- <li class="site-nav--active">
+    <a href="https://babydogecoindev.myshopify.com/"
+          class="site-nav__link site-nav__link--main"
+          
+        >
+          <span class="site-nav__label">Ecommerce</span>
+        </a>
+  </li>
+</ul>-->
+
+
+                <!-- <style>
+  .site-nav a{
+  	color: black;
+  }
+</style> -->
+
+              </ul>
+            </nav>
+
+
+
+            <div id="website-button" class="grid__item pe-0 medium-up--one-sixth text-right site-header__icons">
+              <div class="custom-buy-btn-wrapper site-header__icons-wrapper">
+
+
+
+
+
+
+
+                <!-- 
+          	<a class="primary_btn buy_now_btn d-lg-inline-block" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc748673057861a797275cd8a068abb95a902e8de">Buy Now</a>
+           -->
+                <a class="custom-buy-btn"
+                  href="https://pancakeswap.finance/swap#/swap?outputCurrency=0xc748673057861a797275cd8a068abb95a902e8de">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/pancakeswap-cake-logo.png?v=1637270142">
+                  <span>Buy on Pancake Swap</span>
+                </a>
+                <a class="custom-buy-btn" href="https://app.uniswap.org/#/swap">
+                  <img src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/Uniswap_UNI_-01.png?v=1637270435">
+                  <span>Buy on Uniswap</span>
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="vertical-center trading-btn-position">
+            <!-- mobile -->
+            <a class="custom-mobile-buy-btn"
+              href="https://pancakeswap.finance/swap#/swap?outputCurrency=0xc748673057861a797275cd8a068abb95a902e8de">
+              <img src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/pancakeswap-cake-logo.png?v=1637270142">
+            </a>
+            <a class="custom-mobile-buy-btn" href="https://app.uniswap.org/#/swap">
+              <img src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/Uniswap_UNI_-01.png?v=1637270435">
+            </a>
+
+            <div class="menu_open_btn" style="margin-top: 10px; margin-left: 8px;">
+
+
+              <button type="button" class="btn--link site-header__icon site-header__menu">
+                <!--           <svg fill="#fff" class="icon icon-hamburger" width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.52 7.59998H1.2C0.53724 7.59998 0 8.13722 0 8.79998C0 9.46274 0.53724 9.99998 1.2 9.99998H16.52C17.1828 9.99998 17.72 9.46274 17.72 8.79998C17.72 8.13722 17.1828 7.59998 16.52 7.59998Z" fill="white"/>
+<path d="M29.52 0H1.2C0.53724 0 0 0.53724 0 1.2C0 1.86276 0.53724 2.4 1.2 2.4H29.52C30.1828 2.4 30.72 1.86276 30.72 1.2C30.72 0.53724 30.1828 0 29.52 0Z" fill="white"/>
+<path d="M29.52 15H1.2C0.53724 15 0 15.5372 0 16.2C0 16.8628 0.53724 17.4 1.2 17.4H29.52C30.1828 17.4 30.72 16.8628 30.72 16.2C30.72 15.5372 30.1828 15 29.52 15Z" fill="white"/>
+</svg>
+ -->
+                <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/menu-icon.png?v=11388628589679560788"
+                  alt="">
+              </button>
+
+
+            </div>
+          </div>
+
+        </header>
+      </div>
+    </div>
+    <main class="main-content" id="MainContent">
+
+
+      <!-- BEGIN content_for_index -->
+      <div id="shopify-section-16305818074b13c159" class="shopify-section index-section">
+        <section class="hero_section">
+          <div class="hero_section_inner">
+            <div class="hero_bg_color position-relative">
+              <div class="container pt-5">
+                <div class="row align-items-start">
+                  <div class="col-lg-6 col-md-12 order-2 order-md-1">
+                    <div class="hero_column">
+
+                      <h1 class="white_color fw-bold"><b>The Birth of Baby Doge!</b><br>World's Best<br>Community Coin
+                      </h1>
+
+
+                      <div class="richtext white_color mb-4 text-left">
+                        <p>Baby Doge has learned a few tricks and lessons from his meme father, Doge. A new crypto
+                          birthed by fans of the Doge Meme online community. Baby Doge seeks to impress his father by
+                          showing his new improved transaction speeds &amp; adorableness. He is Hyper-deflationary
+                          with static reflection that rewards holders, so more baby doge coins are being automatically
+                          added to your wallet each transaction. Simply Love, pet, and hold as 5% from each
+                          transaction is automatically redistributed to baby doge holders. Baby Doge primary utility
+                          is building a fun meme community to spread awareness of animal adoption.</p>
+                      </div>
+
+
+                      <div class="hero_image text-center text-md-end d-lg-none d-block">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Baby_Doge_running3_1000x.png?v=1634498539"
+                          alt="">
+                      </div>
+
+                      <!-- 
+              	<a class="primary_btn" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc748673057861a797275cd8a068abb95a902e8de">Buy on Pancake Swap</a>
+               -->
+
+                      <div class="copy-address-line">
+                        <div class="contract-wrapper">
+                          <div style="position: relative;">
+                            <select class="vodiapicker">
+                              <option value="0xc748673057861a797275CD8A068AbB95A902e8de" class="test"
+                                data-thumbnail="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/bsc.png?v=1637275503">
+                                BSC
+
+                              </option>
+                              <option value="0xAC57De9C1A09FeC648E93EB98875B212DB0d460B"
+                                data-thumbnail="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/eth-diamond-black.png?v=1637275253">
+                                ETH</option>
+                            </select>
+                            <div class="lang-select">
+                              <button class="btn-select" value="0xc748673057861a797275CD8A068AbB95A902e8de">
+                                <li><img
+                                    src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/bsc.png?v=1637275503"
+                                    alt=""><span>BSC</span><img
+                                    src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/arrow-down-3101.png?v=1637272542"
+                                    alt="" value="0xc748673057861a797275CD8A068AbB95A902e8de"
+                                    style="margin-left: 4px;width: 18px;height: 8px;"></li>
+                              </button>
+                              <div class="b" style="display: none;">
+                                <ul id="a">
+                                  <li><img
+                                      src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/bsc.png?v=1637275503"
+                                      alt="" value="0xc748673057861a797275CD8A068AbB95A902e8de"><span>BSC
+
+                                    </span></li>
+                                  <li><img
+                                      src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/eth-diamond-black.png?v=1637275253"
+                                      alt="" value="0xAC57De9C1A09FeC648E93EB98875B212DB0d460B"><span>ETH</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <input class="crypto_address mb-0" value="0xc748673057861a797275cd8a068abb95a902e8de"
+                            id="CryptoAddress" disabled="">
+                        </div>
+                        <textarea id="hdnTextBox" cols="20" rows="2" style="display: none;"></textarea>
+                        <a onclick="CryptoAddressfunction()" class="primary_btn px-3" style="cursor:pointer;">Copy
+                          Address</a>
+                      </div>
+
+                      <div class="social_icons_list mt-4 mt-md-5 pt-lg-4 pb-lg-3 ps-lg-3">
+                        <ul class="list-unstyled mb-0">
+
+
+                          <li class="social_icons_list_class text-center d-inline-block">
+                            <div class="social_icons_list_icon">
+                              <a href="https://t.me/joinchat/BmOvV67R_2w1ZjJh">
+                                <img
+                                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/square_telegram.png?v=1634578510"
+                                  alt="">
+                              </a>
+                            </div>
+
+                            <span class="white_color mt-2 d-inline-block">Telegram</span>
+
+                          </li>
+
+
+
+                          <li class="social_icons_list_class text-center d-inline-block">
+                            <div class="social_icons_list_icon">
+                              <a href="https://www.reddit.com/user/Baby_doge_coin">
+                                <img
+                                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Reddit_Logo_Square.png?v=1634578218"
+                                  alt="">
+                              </a>
+                            </div>
+
+                            <span class="white_color mt-2 d-inline-block">Reddit</span>
+
+                          </li>
+
+
+
+                          <li class="social_icons_list_class text-center d-inline-block">
+                            <div class="social_icons_list_icon">
+                              <a href="https://twitter.com/babydogecoin">
+                                <img
+                                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Twitter_Logo_Square.png?v=1634578290"
+                                  alt="">
+                              </a>
+                            </div>
+
+                            <span class="white_color mt-2 d-inline-block">Twitter</span>
+
+                          </li>
+
+
+
+                          <li class="social_icons_list_class text-center d-inline-block">
+                            <div class="social_icons_list_icon">
+                              <a href="https://discord.com/invite/babydogecoin">
+                                <img
+                                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Discord_Logo_Square.png?v=1634578431"
+                                  alt="">
+                              </a>
+                            </div>
+
+                            <span class="white_color mt-2 d-inline-block">Discord</span>
+
+                          </li>
+
+
+
+                          <li class="social_icons_list_class text-center d-inline-block">
+                            <div class="social_icons_list_icon">
+                              <a href="https://Instagram.com/thebabydogecoin">
+                                <img
+                                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/logo-instagram-png-13548.png?v=1634577644"
+                                  alt="">
+                              </a>
+                            </div>
+
+                            <span class="white_color mt-2 d-inline-block">Instagram</span>
+
+                          </li>
+
+
+
+                          <li class="social_icons_list_class text-center d-inline-block">
+                            <div class="social_icons_list_icon">
+                              <a href="https://facebook.com/babydogecoin">
+                                <img
+                                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Facebook_Logo_Square.png?v=1634578559"
+                                  alt="">
+                              </a>
+                            </div>
+
+                            <span class="white_color mt-2 d-inline-block">Facebook</span>
+
+                          </li>
+
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 order-1 order-md-2">
+                    <div class="hero_column">
+
+                      <div class="hero_image text-center text-md-end d-lg-block d-none">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Baby_Doge_running3_1000x.png?v=1634498539"
+                          alt="">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero_item_img d-none d-xl-block">
+
+
+              </div>
+            </div>
+            <!--     <div class="bottom_wave">
+      	<img class="w-100" src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/bottom_wave.svg?v=3568497386110505944" alt="Wave image"/>
+    </div> -->
+          </div>
+        </section>
+
+
+
+        <style>
+          .hero_bg_color {
+            background-color: rgba(0, 0, 0, 0);
+            padding-top: 100px;
+          }
+
+          @media(max-width:991px) {
+            .hero_bg_color {
+              padding-top: unset;
+            }
+          }
+        </style>
+      </div>
+      <div id="shopify-section-1630592524bbb122df" class="shopify-section section_start">
+        <section class="button_group_section"><a target="_blank" href="https://www.certik.com/projects/baby-doge-coin">
+            <img class="certikLogo"
+              src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/certikLogo_blueCheck1_1_5b60de7a-8ad7-431d-b1a6-5a229d0ba80a.png?v=1639964475"
+              alt="">
+          </a>
+
+          <div class="button_group_section_inner">
+            <div class="container">
+              <div class="py-md-5">
+                <ul class="list-unstyled mb-0 d-flex justify-content-between">
+
+
+                  <li>
+                    <a class="secondary_btn" href="https://babydoge.moonradar.finance/swap">Baby Doge Swap</a>
+                  </li>
+
+
+
+                  <li>
+                    <a class="secondary_btn"
+                      href="https://www.dextools.io/app/pancakeswap/pair-explorer/0xc736ca3d9b1e90af4230bd8f9626528b3d4e0ee0">View
+                      Chart</a>
+                  </li>
+
+
+
+                  <li>
+                    <a class="secondary_btn"
+                      href="https://bscscan.com/token/0xc748673057861a797275cd8a068abb95a902e8de#balances">Check BSC
+                      SCAN</a>
+                  </li>
+
+
+
+                  <li>
+                    <a class="secondary_btn" href="https://bridge.babydoge.com">ETH/BSC Bridge</a>
+                  </li>
+
+
+
+                  <li>
+                    <a class="secondary_btn" href="https://www.youtube.com/watch?v=_GgcikggdR0&amp;feature=youtu.be">How
+                      To Buy Guide</a>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a target="_blank" href="https://www.certik.com/projects/baby-doge-coin">
+            <img class="certikLogo-mobile"
+              src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/certikLogo_blueCheck1_1_5b60de7a-8ad7-431d-b1a6-5a229d0ba80a.png?v=1639964475"
+              alt="">
+          </a>
+        </section>
+
+
+      </div>
+      <div id="shopify-section-16305952861cb515ca" class="shopify-section section_start">
+        <section class="partner_section" id="Partner_section_16305952861cb515ca">
+          <div class="partner_section_inner">
+
+            <div class="section_header text-center mb-5">
+
+              <h2 class="h2 color-dark">As Seen In</h2>
+
+
+            </div>
+            <div class="partner_section_start position-relative px-3 px-md-0">
+              <div
+                class="row align-items-center justify-content-center partner-logo-slider slick-initialized slick-slider">
+
+                <div class="slick-list draggable">
+                  <div class="slick-track"
+                    style="opacity: 1; width: 4278px; transform: translate3d(-2046px, 0px, 0px); transition: transform 4500ms linear 0s;">
+                    <div class="slick-slide slick-cloned" data-slick-index="-7" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://markets.businessinsider.com/news/stocks/elon-musk-baby-doge-tweet-coin-surge-dogecoin-crypto-2021-7"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/business-insider_300x100.png?v=1634054835"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://finance.yahoo.com/news/elon-musk-thrusts-baby-doge-130512796.html" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/yahoo-finance_300x100.png?v=1634054851"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/newsweek_300x100.png?v=1634055648"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.benzinga.com/markets/cryptocurrency/21/06/21628588/dogecoin-fans-launch-baby-doge-coin-with-average-daily-gain-of-1-213"
+                        tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Benzinga_300x100.png?v=1634054875"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.marketwatch.com/story/elon-musk-may-be-losing-his-sway-with-dogecoin-investorsbut-baby-doge-coin-is-soaring-11625160997"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/market-watch_300x100.png?v=1634054891"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.nasdaq.com/articles/baby-doge-crypto%3A-5-things-to-know-about-babydoge-and-the-elon-musk-buzz-2021-07-01?amp"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/nasdaq_8e618435-6f39-4954-b125-567268947a04_300x100.png?v=1634054906"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.cnbc.com/2021/07/13/what-are-altcoins-elon-musk-tweets-about-baby-dogecoin-shiba-inu.html"
+                        tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/cnbc_300x100.png?v=1634054926"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://nypost.com/2021/07/02/what-you-need-to-know-about-baby-doge-the-dogecoin-spinoff/"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/new-york-post_300x100.png?v=1634054804"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://markets.businessinsider.com/news/stocks/elon-musk-baby-doge-tweet-coin-surge-dogecoin-crypto-2021-7"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/business-insider_300x100.png?v=1634054835"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://finance.yahoo.com/news/elon-musk-thrusts-baby-doge-130512796.html" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/yahoo-finance_300x100.png?v=1634054851"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 186px;" tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/newsweek_300x100.png?v=1634055648"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-current slick-active" data-slick-index="4" aria-hidden="false"
+                      style="width: 186px;" tabindex="0">
+
+
+                      <a href="https://www.benzinga.com/markets/cryptocurrency/21/06/21628588/dogecoin-fans-launch-baby-doge-coin-with-average-daily-gain-of-1-213"
+                        tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Benzinga_300x100.png?v=1634054875"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="https://www.marketwatch.com/story/elon-musk-may-be-losing-his-sway-with-dogecoin-investorsbut-baby-doge-coin-is-soaring-11625160997"
+                        tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/market-watch_300x100.png?v=1634054891"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="https://www.nasdaq.com/articles/baby-doge-crypto%3A-5-things-to-know-about-babydoge-and-the-elon-musk-buzz-2021-07-01?amp"
+                        tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/nasdaq_8e618435-6f39-4954-b125-567268947a04_300x100.png?v=1634054906"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="https://www.cnbc.com/2021/07/13/what-are-altcoins-elon-musk-tweets-about-baby-dogecoin-shiba-inu.html"
+                        tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/cnbc_300x100.png?v=1634054926"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned slick-active" data-slick-index="8" aria-hidden="false"
+                      style="width: 186px;" tabindex="-1">
+
+
+                      <a href="https://nypost.com/2021/07/02/what-you-need-to-know-about-baby-doge-the-dogecoin-spinoff/"
+                        tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/new-york-post_300x100.png?v=1634054804"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned slick-active" data-slick-index="9" aria-hidden="false"
+                      style="width: 186px;" tabindex="-1">
+
+
+                      <a href="https://markets.businessinsider.com/news/stocks/elon-musk-baby-doge-tweet-coin-surge-dogecoin-crypto-2021-7"
+                        tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/business-insider_300x100.png?v=1634054835"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned slick-active" data-slick-index="10" aria-hidden="false"
+                      style="width: 186px;" tabindex="-1">
+
+
+                      <a href="https://finance.yahoo.com/news/elon-musk-thrusts-baby-doge-130512796.html" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/yahoo-finance_300x100.png?v=1634054851"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/newsweek_300x100.png?v=1634055648"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.benzinga.com/markets/cryptocurrency/21/06/21628588/dogecoin-fans-launch-baby-doge-coin-with-average-daily-gain-of-1-213"
+                        tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Benzinga_300x100.png?v=1634054875"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.marketwatch.com/story/elon-musk-may-be-losing-his-sway-with-dogecoin-investorsbut-baby-doge-coin-is-soaring-11625160997"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/market-watch_300x100.png?v=1634054891"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.nasdaq.com/articles/baby-doge-crypto%3A-5-things-to-know-about-babydoge-and-the-elon-musk-buzz-2021-07-01?amp"
+                        tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/nasdaq_8e618435-6f39-4954-b125-567268947a04_300x100.png?v=1634054906"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="https://www.cnbc.com/2021/07/13/what-are-altcoins-elon-musk-tweets-about-baby-dogecoin-shiba-inu.html"
+                        tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/cnbc_300x100.png?v=1634054926"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="shopify-section-1630593066a1715374" class="shopify-section section_start">
+        <section class="feature_row_section reward-wallet">
+          <div class="feature_row_section_inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <div class="feature_row_column feature_row_info">
+                    <div class="section_header mb-5">
+
+
+                      <h2 class="h2 position-relative fw_600 mb-4">Baby Doge Protocol</h2>
+
+
+                      <div class="richtext fw_600">
+                        <p>Baby Doge is cute but with a lot of BITE! $Baby Doge is a deflationary token designed to
+                          become more scarce over time. All holders of Baby Doge will earn more baby doge that is
+                          automatically sent to your wallet by simply holding Baby Doge coins in your wallet. Watch
+                          the amount of baby doge grow in your wallet as baby doge coin holders automatically receive
+                          a 5% fee from every on chain transaction that happens on the Baby Doge ecosystem. The
+                          community receives more baby doge coins from the fees generated each transaction.</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="feature_row_column feature_row_block_card row">
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" style="" aria-hidden="true" tabindex="0"
+                  role="tabpanel" id="slick-slide40" aria-describedby="slick-slide-control40">
+                  <div class="feature_block_card">
+
+                    <div class="feature_block_card_img mb-3">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/block_icon_3_large_large_8da60fcd-4a92-45fc-8c7e-8f92db5fa8da_large.png?v=1631104117"
+                        alt="feature block card icon">
+                    </div>
+
+
+                    <h5 class="primary_color">Auto Burns</h5>
+
+
+                    <div class="richtext">
+                      <p>The dead wallet holds 41%+ of the supply. That means out of the 5% of the redistribution 41%+
+                        of it will be distributed to the dead wallet each transaction. Thus, coins are burned with
+                        each on chain transaction.</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" style="" aria-hidden="true" tabindex="-1"
+                  role="tabpanel" id="slick-slide41" aria-describedby="slick-slide-control41">
+                  <div class="feature_block_card">
+
+                    <div class="feature_block_card_img mb-3">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/block_icon_2_large_large_b5ef9518-9346-4385-ba56-f564db5b053b_large.png?v=1631104133"
+                        alt="feature block card icon">
+                    </div>
+
+
+                    <h5 class="primary_color">Auto-reflections</h5>
+
+
+                    <div class="richtext">
+                      <p>5% fee of each transaction&nbsp;is redistributed to token holders. That means you can earn
+                        more Baby Doge Coins by holding them in your wallet. (centralized exchanges/wallets may not
+                        apply tokenomics)</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" style="" aria-hidden="true" tabindex="-1"
+                  role="tabpanel" id="slick-slide42" aria-describedby="slick-slide-control42">
+                  <div class="feature_block_card">
+
+                    <div class="feature_block_card_img mb-3">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/block_icon_1_large_large_0066cd24-f873-462f-b6fa-a4133d2a82b7_large.png?v=1631104163"
+                        alt="feature block card icon">
+                    </div>
+
+
+                    <h5 class="primary_color">Locked Liquidty</h5>
+
+
+                    <div class="richtext">
+                      <p>Majority of initial LP tokens locked &amp; some burned.</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" style="" aria-hidden="true" tabindex="-1"
+                  role="tabpanel" id="slick-slide43" aria-describedby="slick-slide-control43">
+                  <div class="feature_block_card">
+
+                    <div class="feature_block_card_img mb-3">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/block_icon_4_large_large_86711124-296c-4231-95ce-63ccfb225b94_large.png?v=1631104183"
+                        alt="feature block card icon">
+                    </div>
+
+
+                    <h5 class="primary_color">Charity Wallet</h5>
+
+
+                    <div class="richtext">
+                      <p>We have a designated charity wallet that receives redistributions that are used to support
+                        our charity partners.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center flex-row-reverse">
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+      <div id="shopify-section-163059435561c8895e" class="shopify-section section_start">
+        <section class="feature_row_section" id="About_section">
+          <div class="feature_row_section_inner">
+            <div class="container">
+              <div class="row align-items-center">
+
+                <div class="col-md-6">
+                  <div class="section_header">
+
+
+                    <h2 class="h2 position-relative fw_600 mb-4">Baby Doge Crypto Card</h2>
+
+                  </div>
+                  <div class="feature_row_column feature_row_info">
+                    <div class="mb-5">
+
+                      <h6>Baby Doge application that will be available on iOS and Android. The application will have
+                        the following features:</h6>
+
+
+                      <div class="richtext">
+                        <p>• Ability to Buy Cryptocurrencies<br>• Ability to send Cryptocurrencies<br>• Ability to
+                          exchange crypto currencies for fiat<br>• Will have new TextBit technology meaning the users
+                          can text BabyDoge to anyone anywhere in the world using a telephone number (restrictions
+                          apply)</p>
+                        <p>*initially only in EEA &amp; UK*</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-6 my-4 my-md-0">
+                  <div class="feature_row_column text-center">
+                    <div class="feature_row_img d-inline-block position-relative">
+
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby-dog-coin-card_2c1398cd-0d77-4520-ae0c-aec28e07192e_700x400.png?v=1632599157"
+                        alt="" class="show-desktop-logo">
+
+
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby-dog-coin-card-mobile_516x456.png?v=1633636502"
+                        alt="" class="show-mobile-logo">
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+      <div id="shopify-section-1633435577143b856d" class="shopify-section section_start">
+        <section class="partner_section" id="Partner_section_1633435577143b856d">
+          <div class="partner_section_inner">
+
+            <div class="section_header text-center mb-5">
+
+              <h2 class="h2 color-dark">Friends of Baby Doge</h2>
+
+
+              <h4 class="fw-bold">Exchanges</h4>
+
+            </div>
+            <div class="partner_section_start position-relative px-3 px-md-0">
+              <div
+                class="row align-items-center justify-content-center partner-logo-slider slick-initialized slick-slider">
+
+                <div class="slick-list draggable">
+                  <div class="slick-track"
+                    style="opacity: 1; width: 6510px; transform: translate3d(-3162px, 0px, 0px); transition: transform 4500ms linear 0s;">
+                    <div class="slick-slide slick-cloned" data-slick-index="-7" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/GateIo_300x100.png?v=1638537303"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/xt_logo_300x100.png?v=1627046585"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/pancakewsap_logo_300x100.png?v=1627046232"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bsc_logo_300x100.png?v=1624037011"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/cmc_logo_300x100.png?v=1624036847"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/lbank-1_300x100.png?v=1623937685"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/hotbit_300x100.png?v=1623937685"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/digifinex_logo_300x100.png?v=1632504712"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bitrue_logo_300x100.png?v=1632504671"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bitforex_logo_300x100.jpg?v=1632504660"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/IMG_1766_300x100.jpg?v=1628770510"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/okex_logo_300x100.png?v=1628770471"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/logo4.fcb2042_300x100.png?v=1638538191"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/ZT_Global_300x100.png?v=1638537317"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/GateIo_300x100.png?v=1638537303"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/xt_logo_300x100.png?v=1627046585"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 186px;" tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/pancakewsap_logo_300x100.png?v=1627046232"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-current slick-active" data-slick-index="10" aria-hidden="false"
+                      style="width: 186px;" tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bsc_logo_300x100.png?v=1624037011"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="11" aria-hidden="false"
+                      style="width: 186px;" tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/cmc_logo_300x100.png?v=1624036847"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="12" aria-hidden="false"
+                      style="width: 186px;" tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/lbank-1_300x100.png?v=1623937685"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="13" aria-hidden="false"
+                      style="width: 186px;" tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/hotbit_300x100.png?v=1623937685"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned slick-active" data-slick-index="14" aria-hidden="false"
+                      style="width: 186px;" tabindex="-1">
+
+
+                      <a href="" tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/digifinex_logo_300x100.png?v=1632504712"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned slick-active" data-slick-index="15" aria-hidden="false"
+                      style="width: 186px;" tabindex="-1">
+
+
+                      <a href="" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bitrue_logo_300x100.png?v=1632504671"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned slick-active" data-slick-index="16" aria-hidden="false"
+                      style="width: 186px;" tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bitforex_logo_300x100.jpg?v=1632504660"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/IMG_1766_300x100.jpg?v=1628770510"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/okex_logo_300x100.png?v=1628770471"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/logo4.fcb2042_300x100.png?v=1638538191"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/ZT_Global_300x100.png?v=1638537317"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/GateIo_300x100.png?v=1638537303"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="22" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/xt_logo_300x100.png?v=1627046585"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/pancakewsap_logo_300x100.png?v=1627046232"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="24" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/bsc_logo_300x100.png?v=1624037011"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="25" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/cmc_logo_300x100.png?v=1624036847"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="26" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/lbank-1_300x100.png?v=1623937685"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-cloned" data-slick-index="27" aria-hidden="true" style="width: 186px;"
+                      tabindex="-1">
+
+
+                      <a href="" tabindex="-1">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/hotbit_300x100.png?v=1623937685"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="shopify-section-1630594366b9f87c48" class="shopify-section section_start">
+        <section class="feature_row_with_video_section" id="Our_document_section">
+          <div class="feature_row_with_video_section_inner">
+            <div class="container">
+              <div class="section_header text-center mb-3">
+
+                <h2 class="h2">Our Tokenomics</h2>
+
+
+              </div>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 order-2 order-md-1 my-4 my-md-0">
+                  <div class="tokenomics_card px-3 py-5">
+                    <div class="row align-items-center m-0">
+                      <div class="col-6 p-0 mb-3">
+
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/feature_column_img_1_368x290.png?v=1623912476"
+                          alt="tokenomics images">
+
+                      </div>
+                      <div class="col-6 text-center p-0">
+
+                        <h2 class="big_title_class primary_color">5%</h2>
+
+                      </div>
+                      <div class="text-center">
+
+                        <h5>Of Each Transaction Added to Liquidity Pool</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5 order-3 order-md-3">
+                  <div class="tokenomics_card px-3 py-5">
+                    <div class="row align-items-center m-0">
+                      <div class="col-6 p-0">
+
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/feature_column_img_2_368x290.png?v=1623913079"
+                          alt="tokenomics images">
+
+                      </div>
+                      <div class="col-6 text-center p-0">
+
+                        <h2 class="big_title_class primary_color">5%</h2>
+
+                      </div>
+                      <div class="text-center">
+
+                        <h5>Of Each Transaction ReDistributed to Holders</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature_row_with_video_column">
+
+                <div class="feature_row_video position-relative text-center">
+                  <!--             <img class="video_cover_img" src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/video-bg-img_690x430.jpg?v=1632605654" alt="video cover image"/> -->
+                  <!--             <a href="" class="popup-youtube video_play_btn" ><img src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/pay-icon.png?v=17385369112877178532" alt="" /></a> -->
+                  <a href="" class="popup-youtube video_play_btn">Watch Video</a>
+                </div>
+
+              </div>
+              <div class="feature_row_with_video_section_start" id="our_document_1630594366b9f87c48">
+
+                <h2 class="h2 text-center mb-3">Our Documents</h2>
+
+                <div class="text-center">
+
+                  <div class="feature_row_video_card view-more-wrapper"
+                    onclick="visitLink('https://cdn.filestackcontent.com/4d0RnSBXTLGfhSjzcoPB')">
+                    <!--               <div class="col-3 p-0">
+                
+              		<img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/video_card_images_180x160_256x256_crop_center_c08fe78e-d998-493d-9498-87770b3b5118_180x160.png?v=1631104722" alt="Feature row video card image"/>
+                
+              </div> -->
+                    <div class="doc-box-view">
+
+                      <h4 class="fw_600 primary_color">Woof Paper</h4>
+
+
+                      <a class="view-more-btn">
+                        <!--                   <span class="fw_500">View Now</span> -->
+                        <img class="eye-img"
+                          src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/eye.png?v=1637329522" alt="">
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="feature_row_video_card view-more-wrapper"
+                    onclick="visitLink('https://dessertswap.finance/audits/Baby%20Doge%20Coin%20(BabyDoge)%20BEP-20%20Audit%208332977.pdf')">
+                    <!--               <div class="col-3 p-0">
+                
+              		<img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/video_card_2_180x160.png?v=1623924034" alt="Feature row video card image"/>
+                
+              </div> -->
+                    <div class="doc-box-view">
+
+                      <h4 class="fw_600 primary_color">Audit I</h4>
+
+
+                      <a class="view-more-btn">
+                        <!--                   <span class="fw_500">View Now</span> -->
+                        <img class="eye-img"
+                          src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/eye.png?v=1637329522" alt="">
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="feature_row_video_card view-more-wrapper"
+                    onclick="visitLink('https://cdn.shopify.com/s/files/1/0388/4833/1916/files/REP-Baby-Doge---ETH-2021-11-12.pdf?v=1637075005')">
+                    <!--               <div class="col-3 p-0">
+                
+              </div> -->
+                    <div class="doc-box-view">
+
+                      <h4 class="fw_600 primary_color">Audit II</h4>
+
+
+                      <a class="view-more-btn">
+                        <!--                   <span class="fw_500">View Now</span> -->
+                        <img class="eye-img"
+                          src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/eye.png?v=1637329522" alt="">
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          .feature_row_with_video_section_inner {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        </style>
+
+
+
+      </div>
+      <div id="shopify-section-16305957675e3f50b9" class="shopify-section section_start">
+        <section class="feature_row_card_section main-interesting-articles"
+          id="Charity_partner_section_16305957675e3f50b9">
+          <div class="feature_row_card_section_inner">
+            <div class="container">
+              <div class="section_header text-center mb-5">
+
+                <h2 class="h2">Interesting Articles</h2>
+
+
+              </div>
+
+              <div class="article-slider slick-initialized slick-slider slick-dotted"><i
+                  class="fa fa-angle-left slick-arrow slick-disabled" aria-disabled="true" style=""
+                  aria-hidden="true"></i>
+
+                <div class="slick-list draggable">
+                  <div class="slick-track" style="opacity: 1; width: 1895px; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-slide slick-slide slick-current slick-active" data-slick-index="0"
+                      aria-hidden="false" style="width: 379px;" tabindex="0" role="tabpanel" id="slick-slide50"
+                      aria-describedby="slick-slide-control50">
+                      <a href="https://twitter.com/elonmusk/status/1410529698497630212?s=21" tabindex="0">
+
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/9BCDFA16-4A79-42A7-8A87-53309F37DF4D_686x448_a15254b6-11d8-435f-b82f-57a97772b59a_686x448.jpg?v=1633686202"
+                          alt="">
+
+
+                        <h3>Tweeted by Elon Musk</h3>
+
+
+                      </a>
+                      <p><a href="https://twitter.com/elonmusk/status/1410529698497630212?s=21" tabindex="0">Elon Musk
+                          aka "Doge Father" AKA Worlds Smartest Man Recognized Baby Doge Only 1 Month After Launch
+                        </a><a href="https://twitter.com/elonmusk/status/1410529698497630212?s=21"
+                          title="https://twitter.com/elonmusk/status/1410529698497630212?s=21" tabindex="0">View
+                          Tweet</a></p>
+
+
+                    </div>
+                    <div class="article-slide slick-slide slick-active" data-slick-index="1" aria-hidden="false"
+                      style="width: 379px;" tabindex="0" role="tabpanel" id="slick-slide51">
+                      <a href="https://bestfriends.org/donate/other-ways-give/crypto-currency-donations" tabindex="0">
+
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/IMG_2248_686x448.jpg?v=1634489211"
+                          alt="">
+
+
+                        <h3>Our biggest donation yet!</h3>
+
+
+                      </a>
+                      <p><a href="https://bestfriends.org/donate/other-ways-give/crypto-currency-donations"
+                          tabindex="0">We partnered and donated $100,000 to Best Friends Animal Society. They are also
+                          onboarded to accept baby doge as a donation method on their </a><a
+                          href="https://bestfriends.org/donate/other-ways-give/crypto-currency-donations"
+                          title="https://bestfriends.org/donate/other-ways-give/crypto-currency-donations"
+                          tabindex="0">website</a>!</p>
+
+
+                    </div>
+                    <div class="article-slide slick-slide slick-active" data-slick-index="2" aria-hidden="false"
+                      style="width: 379px;" tabindex="0" role="tabpanel" id="slick-slide52">
+                      <a href="#" tabindex="0">
+
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/IMG_0573_686x448_ff871852-90fc-490d-b561-d17eaa834941_686x448.jpg?v=1633686269"
+                          alt="">
+
+
+                        <h3>Baby Doge is FAST!</h3>
+
+
+                        <p>Baby Doge is built on Binance smart chain with 5 second block speeds! Oh we also raced in
+                          Nascar!</p>
+
+                      </a>
+                    </div>
+                    <div class="article-slide slick-slide" data-slick-index="3" aria-hidden="true" style="width: 379px;"
+                      tabindex="-1" role="tabpanel" id="slick-slide53" aria-describedby="slick-slide-control51">
+                      <a href="" tabindex="-1">
+
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/IMG_0796_686x448.jpg?v=1634489559"
+                          alt="">
+                        <h3>$75,000 Donation</h3>
+                        <p>teams up with local senior citizens, at-risk-youth and various other community members to
+                          provide the art supplies and training needed to paint stunning portraits of shelter pets.
+                          This unique blend of art and animal therapy improves individuals well-being by reducing
+                          depression and giving a sense of purpose to the artist.</p>
+                      </a>
+                    </div>
+                    <div class="article-slide slick-slide" data-slick-index="4" aria-hidden="true" style="width: 379px;"
+                      tabindex="-1" role="tabpanel" id="slick-slide54">
+                      <a href="#" tabindex="-1">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/IMG_0574_686x448_acdfeb21-ef89-41a4-bd1c-0feb51d6a6cf_686x448.jpg?v=1633686236"
+                          alt="">
+                        <h3>Not so baby impact</h3>
+                        <p>PawsWithCause plus FurKids work with 45 different shelters in the USA! Best Friends Animal
+                          is the LARGEST no kill sanctuary in the United States!</p>
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <i class="fa fa-angle-right slick-arrow" style="" aria-disabled="false" aria-hidden="true"></i>
+                <ul class="slick-dots" style="" role="tablist">
+                  <li class="slick-active" role="presentation"><button type="button" role="tab"
+                      id="slick-slide-control50" aria-controls="slick-slide50" aria-label="1 of 2" tabindex="0"
+                      aria-selected="true">1</button></li>
+                  <li role="presentation"><button type="button" role="tab" id="slick-slide-control51"
+                      aria-controls="slick-slide53" aria-label="2 of 2" tabindex="-1">2</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="shopify-section-1630595978b790d8c7" class="shopify-section index-section">
+        <div class="page-width feature-row">
+          <div class="feature-row">
+            <div class="feature-row__item">
+              <style>
+                #FeatureRowImage-1630595978b790d8c7 {
+                  max-width: 686.0px;
+                  max-height: 400px;
+                }
+
+                #FeatureRowImageWrapper-1630595978b790d8c7 {
+                  max-width: 686.0px;
+                }
+              </style>
+
+              <div id="FeatureRowImageWrapper-1630595978b790d8c7" class="feature-row__image-wrapper js">
+                <div style="padding-top:58.30903790087464%;" data-image-loading-animation="">
+                  <img id="FeatureRowImage-1630595978b790d8c7" class="feature-row__image lazyautosizes lazyloaded"
+                    data-src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/coin_payments_686x448_b640de5f-b17c-466d-8332-18f39071b4d8_720x.png?v=1633686155"
+                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="1.715"
+                    data-sizes="auto" alt="" sizes="578px"
+                    src="https://cdn.shopify.com/s/files/1/0388/4833/1916/files/coin_payments_686x448_b640de5f-b17c-466d-8332-18f39071b4d8_720x.png?v=1633686155">
+                </div>
+              </div>
+
+              <noscript>
+                <img
+                  src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/coin_payments_686x448_b640de5f-b17c-466d-8332-18f39071b4d8_600x600@2x.png?v=1633686155"
+                  alt="" class="feature-row__image" />
+              </noscript>
+
+            </div>
+
+
+
+            <div class="feature-row__item feature-row__text feature-row__text--left">
+
+              <h2 class="h3">E-commerce</h2>
+
+
+              <div class="rte rte-setting featured-row__subtext">
+                <p>Baby Doge has partnered with CoinPayments.net to allow merchants across the globe to accept baby
+                  doge as a payment if they choose.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="shopify-section-163059825267523ee1" class="shopify-section section_start">
+        <section class="tab_section" id="Tab_section">
+          <div class="tab_section_inner">
+            <div class="container">
+              <div class="section_header text-center mb-5">
+
+                <h2 class="h2 mb-0">Baby Doge Board</h2>
+
+
+                <p>Baby Doge Board (note: check mark does not mean completed or not completed)</p>
+
+              </div>
+              <div class="tab_main_section row d-none d-md-flex">
+                <div class="col-md-3">
+                  <div class="tab_link_card">
+                    <div class="nav flex-column nav-pills" id="Roadmap_tab_link" role="tablist"
+                      aria-orientation="vertical">
+
+
+                      <button class="nav-link active" id="tab_link_1" data-bs-toggle="pill"
+                        data-bs-target="#tab_content_1" type="button" role="tab" aria-controls="tab_content_1"
+                        aria-selected="true">
+                        Phase 1
+                      </button>
+
+
+
+                      <button class="nav-link " id="tab_link_2" data-bs-toggle="pill" data-bs-target="#tab_content_2"
+                        type="button" role="tab" aria-controls="tab_content_2" aria-selected="true">
+                        Phase 2
+                      </button>
+
+
+
+                      <button class="nav-link " id="tab_link_3" data-bs-toggle="pill" data-bs-target="#tab_content_3"
+                        type="button" role="tab" aria-controls="tab_content_3" aria-selected="true">
+                        Phase 3
+                      </button>
+
+
+
+                      <button class="nav-link " id="tab_link_4" data-bs-toggle="pill" data-bs-target="#tab_content_4"
+                        type="button" role="tab" aria-controls="tab_content_4" aria-selected="true">
+                        Phase 4
+                      </button>
+
+
+
+                      <button class="nav-link " id="tab_link_5" data-bs-toggle="pill" data-bs-target="#tab_content_5"
+                        type="button" role="tab" aria-controls="tab_content_5" aria-selected="true">
+                        Phase 5
+                      </button>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="tab-content" id="Roadmap_tab_content">
+
+
+                    <div class="tab-pane fade show active" id="tab_content_1" role="tabpanel"
+                      aria-labelledby="tab_link_1">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 1 - Birth</h5>
+                          <ul>
+                            <li class="true">Marketing push to spread awareness</li>
+                            <li>Website launch</li>
+                            <li>5000 telegram members</li>
+                            <li>Meme development</li>
+                            <li>Baby Doge is Born!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade " id="tab_content_2" role="tabpanel" aria-labelledby="tab_link_2">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 2 - Crawl</h5>
+                          <ul>
+                            <li>Influencer marketing push</li>
+                            <li>Listing on coin gecko</li>
+                            <li>Listing on coin market cap</li>
+                            <li>25,000 telegram members</li>
+                            <li>25,000 holders</li>
+                            <li>Third party audit</li>
+                            <li>Voluntary donation for community + charity partnership</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade " id="tab_content_3" role="tabpanel" aria-labelledby="tab_link_3">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 3 - Walk</h5>
+                          <ul>
+                            <li>100,000 holders</li>
+                            <li>100,000 telegram members</li>
+                            <li>Air drop </li>
+                            <li>Large influencer marketing push</li>
+
+                            <li>More memes from community</li>
+                            <li>Baby Doge Swap Credit Card For Crypto Integration.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade " id="tab_content_4" role="tabpanel" aria-labelledby="tab_link_4">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 4 - Run</h5>
+                          <ul>
+                            <li>150,000 holders</li>
+                            <li>increase marketing</li>
+                            <li>Baby Doge Swap</li>
+                            <li>Add way more memes</li>
+                            <li>Website Redesign</li>
+                            <li>Baby Doge Paw (Paw wallet tracker )</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade " id="tab_content_5" role="tabpanel" aria-labelledby="tab_link_5">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 5 - Jump</h5>
+                          <ul>
+                            <li>300,000 Holders</li>
+                            <li class="notdone"> Release Baby Doge Swap.</li>
+                            <li class="notdone"> Release NFT market place, NFT collection.</li>
+                            <liclass>Give away Tesla to community
+                              <li>Memes. Everywhere.</li>
+                              <li class="notdone">$750k total donations to dog shelters
+                                <l l="">
+                                </l>
+                              </li>
+                            </liclass>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordian_main d-md-none">
+                <div class="accordian_start">
+
+
+                  <div class="accordian_card_main">
+                    <div class="accordian_link d-flex align-items-center justify-content-between">
+                      <div class="accordian_title">
+                        <h5 class="d-inline-block mb-0">Phase</h5>
+                        <h4 class="d-inline-block mb-0">1</h4>
+                      </div>
+                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordian_content">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 1 - Birth</h5>
+                          <ul>
+                            <li class="true">Marketing push to spread awareness</li>
+                            <li>Website launch</li>
+                            <li>5000 telegram members</li>
+                            <li>Meme development</li>
+                            <li>Baby Doge is Born!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="accordian_card_main">
+                    <div class="accordian_link d-flex align-items-center justify-content-between">
+                      <div class="accordian_title">
+                        <h5 class="d-inline-block mb-0">Phase</h5>
+                        <h4 class="d-inline-block mb-0">2</h4>
+                      </div>
+                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordian_content">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 2 - Crawl</h5>
+                          <ul>
+                            <li>Influencer marketing push</li>
+                            <li>Listing on coin gecko</li>
+                            <li>Listing on coin market cap</li>
+                            <li>25,000 telegram members</li>
+                            <li>25,000 holders</li>
+                            <li>Third party audit</li>
+                            <li>Voluntary donation for community + charity partnership</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="accordian_card_main">
+                    <div class="accordian_link d-flex align-items-center justify-content-between">
+                      <div class="accordian_title">
+                        <h5 class="d-inline-block mb-0">Phase</h5>
+                        <h4 class="d-inline-block mb-0">3</h4>
+                      </div>
+                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordian_content">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 3 - Walk</h5>
+                          <ul>
+                            <li>100,000 holders</li>
+                            <li>100,000 telegram members</li>
+                            <li>Air drop </li>
+                            <li>Large influencer marketing push</li>
+
+                            <li>More memes from community</li>
+                            <li>Baby Doge Swap Credit Card For Crypto Integration.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="accordian_card_main">
+                    <div class="accordian_link d-flex align-items-center justify-content-between">
+                      <div class="accordian_title">
+                        <h5 class="d-inline-block mb-0">Phase</h5>
+                        <h4 class="d-inline-block mb-0">4</h4>
+                      </div>
+                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordian_content">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 4 - Run</h5>
+                          <ul>
+                            <li>150,000 holders</li>
+                            <li>increase marketing</li>
+                            <li>Baby Doge Swap</li>
+                            <li>Add way more memes</li>
+                            <li>Website Redesign</li>
+                            <li>Baby Doge Paw (Paw wallet tracker )</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="accordian_card_main">
+                    <div class="accordian_link d-flex align-items-center justify-content-between">
+                      <div class="accordian_title">
+                        <h5 class="d-inline-block mb-0">Phase</h5>
+                        <h4 class="d-inline-block mb-0">5</h4>
+                      </div>
+                      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="accordian_content">
+                      <div class="row roadmap_tab_content">
+                        <div class="mb-3">
+                          <h5 class="primary_color">Phase 5 - Jump</h5>
+                          <ul>
+                            <li>300,000 Holders</li>
+                            <li class="notdone"> Release Baby Doge Swap.</li>
+                            <li class="notdone"> Release NFT market place, NFT collection.</li>
+                            <liclass>Give away Tesla to community
+                              <li>Memes. Everywhere.</li>
+                              <li class="notdone">$750k total donations to dog shelters
+                                <l l="">
+                                </l>
+                              </li>
+                            </liclass>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+      <div id="shopify-section-1630598442333f892a" class="shopify-section section_start">
+        <div class="container sec-accordion">
+          <div class="accordion" id="accordionFaq">
+            <div class="accordion-item">
+
+              <div class="accordion-item">
+
+                <h2 class="accordion-header" id="heading-1">
+                  <button class="accordion-button  " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                    How to fix insufficient output on pancake swap?
+                  </button>
+                </h2>
+
+
+                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>Increase slippage to 12%</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="accordion-item">
+
+                <h2 class="accordion-header" id="heading-2">
+                  <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                    How Can I Help?
+                  </button>
+                </h2>
+
+
+                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>Tell your friends &amp; family, about baby doge. Social media is a wonderful place. You can
+                      also email your proposal to</p>
+                    <p> Partnerships@babydogecoin.com</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="accordion-item">
+
+                <h2 class="accordion-header" id="heading-3">
+                  <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                    What is Baby Doge Coin?
+                  </button>
+                </h2>
+
+
+                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>Despite the name Baby Doge Coin is actually a fun collectible token built on Binance smart
+                      chain. Originally created as a meme joke with 420 Quadrillion supply and deflationary mechanics
+                      as oppose to traditional inflationary/fixed supply. Baby doge supply is decreased with each
+                      transaction 40% of the supply has been burned so far. Baby Doge goal is to drive awareness of
+                      animal and cryptocurrency adoption.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="accordion-item">
+
+                <h2 class="accordion-header" id="heading-4">
+                  <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                    What are the fees?
+                  </button>
+                </h2>
+
+
+                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>Every transaction has a 10% fee with 5% going to the holders and 5% going to pancakeswap
+                      liquidity pool. The generated LP tokens are used for burns &amp; powering the project.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="accordion-item">
+
+                <h2 class="accordion-header" id="heading-5">
+                  <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                    What do you mean by decentralized?
+                  </button>
+                </h2>
+
+
+                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5"
+                  data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>It means you don't have to trust any central organization or person the way you would a bank.
+                      The developers nor team can seize your funds, but they also can't return them if you send them
+                      to the wrong address.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!--     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div> -->
+          </div>
+        </div>
+        <section class="contact_us_section" id="Contact_us_section">
+          <div class="contact_us_section_section_inner py-5">
+            <div class="container">
+              <div class="contact_us_card">
+                <div class="section_header text-center mb-5">
+
+                  <h2 class="h2">Contact us</h2>
+
+
+
+                  <div class="richtext w-50 mx-auto">
+                    <p>Write us in the form below</p>
+                  </div>
+
+                </div>
+                <div class="row align-items-center">
+                  <!--             <div class="col-md-5">
+              <div class="feature_row_column text-center">
+                <div class="feature_row_img d-inline-block position-relative">
+                  
+                </div>
+              </div>
+            </div> -->
+
+                  <div class="contact-form form-vertical">
+                    <form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8"
+                      class="contact-form"><input type="hidden" name="form_type" value="contact"><input type="hidden"
+                        name="utf8" value="✓">
+
+
+
+
+
+                      <div class="contact_form_class">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-label" for="ContactForm-name">Name</label>
+                              <input placeholder="What is your Name?" class="form-control" type="text"
+                                id="ContactForm-name" name="contact[Name]" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-label" for="ContactForm-email">Email</label>
+                              <input class="form-control" placeholder="What is your Email?" type="email"
+                                id="ContactForm-email" name="contact[email]" autocorrect="off" autocapitalize="off"
+                                value="" aria-required="true">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="ContactForm-message">Message</label>
+                          <textarea placeholder="Your Message" class="form-control" rows="3" id="ContactForm-message"
+                            name="contact[Message]"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                          <input type="submit" class="primary_btn" value="Send">
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <style>
+          .contact_us_section_section_inner {
+            background-color: rgba(0, 0, 0, 0);
+          }
+        </style>
+
+
+
+      </div>
+      <div id="shopify-section-1634477942384e96b4" class="shopify-section section_start">
+        <section class="social_icon_with_background_section" id="social_icon_section">
+          <div class="social_icon_with_background_section_inner py-5">
+            <div class="container">
+              <div class="section_header text-center mb-5">
+
+                <h1 class="grey_big_title fw-bold">Community</h1>
+
+
+                <h4 class="fw-bold">Join Our <cite>Community</cite></h4>
+
+
+                <div class="richtext w-75 mx-auto">
+                  <p>480,000+ Twitter Followers</p>
+                  <p>190,000+ Telegram Members</p>
+                  <p>Extremely active community that loves our mission and doges! Our telegram channel is filled with
+                    community members 24/7 that would love to help you. Do not trust random messages of people
+                    claiming to be “support” or ever give out your wallet info to anyone.<br><br><strong>See you
+                      soon!</strong></p>
+                </div>
+
+              </div>
+              <div class="social_icon_with_background_section_start social_icons_list border-0">
+                <ul class="list-unstyled mb-0 text-center">
+
+
+                  <li class="social_icons_list_class text-center d-inline-block">
+                    <div class="social_icons_list_icon">
+                      <a href="https://t.me/babydogecoin">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/square_telegram_80x80.png?v=1634578510"
+                          alt="">
+                      </a>
+                    </div>
+
+                  </li>
+
+
+
+                  <li class="social_icons_list_class text-center d-inline-block">
+                    <div class="social_icons_list_icon">
+                      <a href="https://twitter.com/babydogecoin">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Twitter_Logo_Square_80x80.png?v=1634578290"
+                          alt="">
+                      </a>
+                    </div>
+
+                  </li>
+
+
+
+                  <li class="social_icons_list_class text-center d-inline-block">
+                    <div class="social_icons_list_icon">
+                      <a href="https://facebook.com/babydogecoin">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Facebook_Logo_Square_80x80.png?v=1634578559"
+                          alt="">
+                      </a>
+                    </div>
+
+                  </li>
+
+
+
+                  <li class="social_icons_list_class text-center d-inline-block">
+                    <div class="social_icons_list_icon">
+                      <a href="https://instagram.com/thebabydogecoin">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/logo-instagram-png-13548_80x80.png?v=1634577644"
+                          alt="">
+                      </a>
+                    </div>
+
+                  </li>
+
+
+
+                  <li class="social_icons_list_class text-center d-inline-block">
+                    <div class="social_icons_list_icon">
+                      <a href="https://discord.com/invite/babydogecoin">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Discord_Logo_Square_80x80.png?v=1634578431"
+                          alt="">
+                      </a>
+                    </div>
+
+                  </li>
+
+
+
+                  <li class="social_icons_list_class text-center d-inline-block">
+                    <div class="social_icons_list_icon">
+                      <a href="https://www.reddit.com/user/Baby_doge_coin">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/Reddit_Logo_Square_80x80.png?v=1634578218"
+                          alt="">
+                      </a>
+                    </div>
+
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+      </div>
+      <div id="shopify-section-1630598456eb27ba2a" class="shopify-section section_start">
+        <section class="partner_section" id="Partner_section_1630598456eb27ba2a">
+          <div class="partner_section_inner">
+
+            <div class="section_header text-center mb-5">
+
+              <h2 class="h2 color-dark">Charity Partners!</h2>
+
+
+            </div>
+            <div class="partner_section_start position-relative px-3 px-md-0">
+              <div
+                class="row align-items-center justify-content-center partner-logo-slider slick-initialized slick-slider">
+
+                <div class="slick-list draggable">
+                  <div class="slick-track" style="opacity: 1; width: 930px; transform: translate3d(0px, 0px, 0px);">
+                    <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
+                      style="width: 186px;" tabindex="0">
+
+
+                      <a href="https://pawswithcause.org/" tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/feature_row_card_300x100.png?v=1623914286"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="https://furkids.org/" tabindex="0">
+                        <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/furkids_300x100.gif?v=1626087290"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="https://bestfriends.org/" tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/BF_Secondary_Square_RGB_1_300x100.png?v=1631740130"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="https://www.animalleague.org/" tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/NSALA-VERTICAL_300x100.png?v=1640105992"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                    <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 186px;"
+                      tabindex="0">
+
+
+                      <a href="" tabindex="0">
+                        <img
+                          src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby-doge-coin_300x100.png?v=1632423765"
+                          alt="partner logo image" style="margin:0 auto;">
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><!-- END content_for_index -->
+
+      <!-- "snippets/judgeme_widgets.liquid" was not rendered, the associated app was uninstalled -->
+    </main>
+    <a href="#MainContent" class="back_to_top">
+      <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16.7758 0.43457C16.1921 0.43457 15.6084 0.657442 15.1634 1.10225L1.15934 15.1065C0.2685 15.9973 0.2685 17.4417 1.15934 18.3321C2.04982 19.2226 3.49388 19.2226 4.3848 18.3321L16.7758 5.94043L29.1668 18.3317C30.0577 19.2222 31.5016 19.2222 32.392 18.3317C33.2833 17.4412 33.2833 15.9969 32.392 15.106L18.3882 1.10182C17.9429 0.656937 17.3593 0.43457 16.7758 0.43457Z"
+          fill="#0AB5DB"></path>
+      </svg>
+    </a>
+    <div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
+    </div>
+    <div id="shopify-section-footer--v2" class="shopify-section">
+      <footer class="site-footer critical-hidden main-footer-sec" role="contentinfo" data-section-id="footer--v2"
+        data-section-type="footer-section">
+        <div class="container">
+          <div class="site__footer_main">
+            <div class="site__footer">
+              <div class="site-footer__item-inner">
+                <h3 class="footer-title">Susbscribe to our Newsletter</h3>
+                <div class="site-footer__newsletter">
+                  <form method="post" action="/contact#ContactFooter" id="ContactFooter" accept-charset="UTF-8"
+                    class="contact-form" novalidate="novalidate"><input type="hidden" name="form_type"
+                      value="customer"><input type="hidden" name="utf8" value="✓">
+                    <label class="form-label">Susbscribe to our Newsletter</label><input type="hidden"
+                      name="contact[tags]" value="newsletter">
+                    <div class="form-group mt-4">
+                      <input type="email" name="contact[email]" id="ContactFooter-email" class="form-control" value=""
+                        aria-label="Email address" aria-required="true" required="" autocorrect="off"
+                        autocapitalize="off">
+                      <button type="submit" class="primary_btn newsletter__submit" name="commit">
+                        Submit
+                      </button>
+                    </div>
+
+                  </form>
+                </div>
+                <div class="footer_social_start">
+                  <h3 class="footer-title">Follow us!</h3>
+                  <ul class="list--inline social-icons site-footer__icon-list">
+                    <li class="social_icons_list_class text-center d-inline-block">
+                      <div class="social_icons_list_icon">
+                        <a class="social-icons__link" href="https://t.me/babydogecoin"
+                          aria-describedby="a11y-external-message"><img
+                            src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/ic-telegram.png?v=3192346275356868209"
+                            alt=""><span class="icon__fallback-text">Telegram</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="social_icons_list_class text-center d-inline-block">
+                      <div class="social_icons_list_icon">
+                        <a class="social-icons__link" href="https://www.reddit.com/user/Baby_doge_coin"
+                          aria-describedby="a11y-external-message"><img
+                            src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/ic-reddit.png?v=13152077527210333347"
+                            alt=""><span class="icon__fallback-text">Reddit</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="social_icons_list_class text-center d-inline-block">
+                      <div class="social_icons_list_icon">
+                        <a class="social-icons__link" href="https://discord.com/invite/babydogecoin"
+                          aria-describedby="a11y-external-message"><img
+                            src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/ic-discord.png?v=1077934594477453742"
+                            alt=""><span class="icon__fallback-text">Discord</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="social_icons_list_class text-center d-inline-block">
+                      <div class="social_icons_list_icon">
+                        <a class="social-icons__link" href="https://www.instagram.com/thebabydogecoin/"
+                          aria-describedby="a11y-external-message"><img
+                            src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/ic-instagram.png?v=16121638625077339567"
+                            alt=""><span class="icon__fallback-text">Instagram</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="social_icons_list_class text-center d-inline-block">
+                      <div class="social_icons_list_icon">
+                        <a class="social-icons__link" href="https://twitter.com/babydogecoin"
+                          aria-describedby="a11y-external-message"><img
+                            src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/ic-twitter.png?v=2336692054386471058"
+                            alt=""><span class="icon__fallback-text">Twitter</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="social_icons_list_class text-center d-inline-block">
+                      <div class="social_icons_list_icon">
+                        <a class="social-icons__link" href="https://www.facebook.com/babydogecoin"
+                          aria-describedby="a11y-external-message"><img
+                            src="//cdn.shopify.com/s/files/1/0388/4833/1916/t/69/assets/ic-facebook.png?v=15462794301579963995"
+                            alt=""><span class="icon__fallback-text">Facebook</span>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="certikLogo-footer">
+                  <a target="_blank" href="https://www.certik.com/projects/baby-doge-coin">
+                    <img width="100%"
+                      src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/certik_white_a5d72976-8dee-4548-81cb-b773e10a7da2.png?v=1639965854"
+                      alt="">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <div class="site__footer">
+              <div class="site-footer__item-inner">
+                <h3 class="footer-title">Other Links</h3>
+                <ul class="site-footer__linklist
+                            ">
+                  <li class="site-footer__linklist-item">
+                    <a href="#partnerSection">
+                      Friends of Baby Doge
+                    </a>
+                  </li>
+                  <li class="site-footer__linklist-item">
+                    <a href="#Partner_section_1630598456eb27ba2a">
+                      Charity
+                    </a>
+                  </li>
+                  <li class="site-footer__linklist-item">
+                    <a href="#About_section">
+                      Debit Card
+                    </a>
+                  </li>
+                  <li class="site-footer__linklist-item">
+                    <a href="#Partner_section_16305952861cb515ca">
+                      As Seen In
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="footer-title write-us">Write Us</h3>
+                <ul class="footer__linklist write-us-link">
+                  <li class="site-footer__linklist-item">
+                    <a href="mailto:Press@BabyDogeCoin.com">Press@BabyDogeCoin.com</a>
+                  </li>
+                  <li class="site-footer__linklist-item">
+                    <a href="mailto:Partnerships@BabyDogeCoin.com">Partnerships@BabyDogeCoin.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="site__footer">
+              <div class="site-footer__item-inner">
+                <div class="footer-logo">
+                  <img src="//cdn.shopify.com/s/files/1/0388/4833/1916/files/baby-dog-logo2x_large.png?v=1633634571">
+                </div>
+                <div class="site-footer__rte
+                               copyright-text">
+                  <p>Copyright © 2021 Baby Doge. All Rights Reserved <a
+                      href="https://babydogecoin.com/pages/privacy-policy" target="_blank"
+                      title="https://babydogecoin.com/pages/privacy-policy">Privacy Policy</a> - <a
+                      href="https://babydogecoin.com/pages/terms-conditions" target="_blank"
+                      title="https://babydogecoin.com/pages/terms-conditions">Terms &amp; Conditions </a></p>
+                  <p>Baby Doge is not an investment and created as a joke &amp; meme parody like doge. Baby Doge makes
+                    no promises and is not responsible for any losses or errors use at your own risk. Baby Doge is not
+                    affiliated with <a href="http://dogecoin.com/" title="http://dogecoin.com">DogeCoin or DogeCoin
+                      Foundation</a>. Baby Doge and all cryptocurrencies are extremely high risk and may result in a
+                    100% total loss. Nothing on this site is investment advice.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="grid grid--no-gutters small--text-center grid--footer-float-right">
+            <div class="grid__item small--hide one-half "></div>
+            <div class="grid__item medium-up--hide one-half small--one-whole"></div>
+            <div class="grid__item small--one-whole  mt-5">
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+    </div>
+
+
+
+  </div>
+  </div>
+</body>
+
+</html>
