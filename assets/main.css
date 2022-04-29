@@ -15,6 +15,10 @@ body {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 h1,
 h2,
 h3,
@@ -86,13 +90,11 @@ div#shopify-section-collection-bubbles {
 }
 
 .partner_section_inner h2 {
-  color: #c2c2c2;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: none;
   letter-spacing: 0.05em;
   margin: 0;
-  font-size: 17px;
   margin-bottom: 30px;
 }
 
@@ -632,7 +634,7 @@ div#CartDrawer {
 
 .site-footer {
   border-top: 0;
-  background-color: #0e282e;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -2400,6 +2402,10 @@ pre {
   cursor: pointer;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #902719 !important;
+}
+
 @media screen and (max-width : 864px) {
   .item-wrapper .product-single__meta {
     padding-left: 0px;
@@ -2450,4 +2456,19 @@ pre {
   text-align: center;
   font-size: 15px;
   font-family: 'ITC Conduit', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .main-content {
+    padding-top: 0;
+  }
+
+  .hero_section {
+    padding-top: 0;
+    background: none !important;
+  }
+
+  #Tab_section {
+    background: #000000;
+  }
 }
