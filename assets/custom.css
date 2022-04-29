@@ -583,12 +583,12 @@ p:last-child {
 }
 
 .custom-buy-btn {
-  background-color: white;
   padding: 10px;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  margin: 0px 5px
+  margin: 0px 5px;
+  color: #902719;
 }
 
 
@@ -865,14 +865,14 @@ textarea:focus {
   border-radius: 10px;
   display: inline-block;
   transition: all .3s;
-  border: 2px solid #5fd2eb;
-  color: #5fd2eb;
+  border: 2px solid #902719;
+  color: #902719;
   min-width: 100%;
   text-align: center;
 }
 
 .secondary_btn:hover {
-  background-color: #0AB5DB;
+  background-color: #902719;
   color: #fff !important;
 }
 
@@ -1020,8 +1020,8 @@ ul#SiteNav {
 }
 
 .social_icons_list_icon a {
-  background: #fff;
-  border: 2px solid #fff;
+  background: #902719;
+  border: 2px solid #902719;
   box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
   border-radius: 20px;
   width: 80px;
@@ -1073,16 +1073,15 @@ ul#SiteNav {
 }
 
 .site-nav__link:hover {
-  /*  background-color: var(--color-btn-primary); */
-  color: var(--color-btn-primary-text) !important;
+  color: #902719 !important;
 }
 
 .site-nav__link:hover:after {
   content: '';
-  background: #ff357d;
-  background: -moz-linear-gradient(left, #ff357d 0, #ff6f33 68%);
-  background: -webkit-linear-gradient(left, #ff357d 0, #ff6f33 68%);
-  background: linear-gradient(to right, #ff357d 0, #ff6f33 68%);
+  background: #902719;
+  background: -moz-linear-gradient(left, #902719 0, #ff6f33 68%);
+  background: -webkit-linear-gradient(left, #902719 0, #ff6f33 68%);
+  background: linear-gradient(to right, #902719 0, #ff6f33 68%);
   position: absolute;
   display: block;
   bottom: -7px;
@@ -1195,7 +1194,7 @@ footer .social_icons_list_icon a {
 
 /* feature row with block card css start*/
 .h2 {
-  color: #2bb3d2;
+  color: #902719;
   font-size: 34px;
   text-transform: none;
   letter-spacing: 0;
@@ -1207,7 +1206,7 @@ footer .social_icons_list_icon a {
   border-radius: 10px;
   min-height: 320px;
   text-align: center;
-  box-shadow: 2px 0 24px rgb(0 0 0 / 13%);
+  box-shadow: 2px 0 24px #902719;
 }
 
 .feature_block_card_img {
@@ -1218,7 +1217,7 @@ footer .social_icons_list_icon a {
 }
 
 .feature_block_card h5 {
-  color: #000619;
+  color: #902719;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.03px;
@@ -1342,11 +1341,11 @@ footer .social_icons_list_icon a {
 }
 
 .tab_main_section {
-  background-color: #fff;
+  background-color: #000000;
   border-radius: 20px;
   padding: 50px 30px;
   height: 100%;
-  box-shadow: 4px 0 30px rgb(0 0 0 / 15%);
+  box-shadow: 4px 0 30px #902719;
 }
 
 .roadmap_tab_content p {
@@ -1364,21 +1363,22 @@ footer .social_icons_list_icon a {
   top: 0;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #2fb9d7;
+  color: #902719;
 }
 
 .roadmap_tab_content ul li {
   position: relative;
   padding-bottom: 10px;
+  color: #ffffff;
 }
 
 /* social icon with background css start */
 .social_icon_with_background_section_start .social_icons_list_icon a:hover {
-  border-color: #0ab5db;
+  border-color: #902719;
 }
 
 .social_icon_with_background_section_inner .section_header .richtext p strong {
-  color: #0AB5DB;
+  color: #902719;
   font-weight: 400;
 }
 
@@ -1386,7 +1386,7 @@ footer .social_icons_list_icon a {
 .form-label {
   font-size: 1.5625rem;
   font-weight: 500;
-  color: #0AB5DB;
+  color: #902719;
   line-height: 37px;
 }
 
@@ -1428,7 +1428,7 @@ footer .social_icons_list_icon a {
   outline: none;
   box-shadow: none;
   background: rgb(245 245 255 / 54%);
-  border-color: #0AB5DB;
+  border-color: #902719;
 }
 
 textarea.form-control {
@@ -1603,14 +1603,10 @@ div#shopify-section-header--v2 {
   padding: 80px 0 130px;
 }
 
-[data-section-id="header--v2"] {
-  background: transparent !important;
-}
-
 .hero_section {
-  background: url('https://cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/hero-bg.png?v=1632425643');
+  background: url('./images/bg_primary-removebg.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-position: center;
   padding-bottom: 80px;
 }
@@ -1688,7 +1684,7 @@ div#shopify-section-header--v2 {
 
 .feature_row_with_video_section_inner {
   content: '';
-  background: url('//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/our-document-bg.jpg?v=1632604372');
+  /* background: url('//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/our-document-bg.jpg?v=1632604372'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1722,7 +1718,7 @@ div#shopify-section-header--v2 {
   font-size: 25px;
   font-weight: 700;
   color: #fff !important;
-  border: 3px solid #5fd2eb;
+  border: 3px solid #902719;
   border-radius: 10px;
   height: 70px;
   display: inline-block;
@@ -1742,7 +1738,7 @@ div#shopify-section-header--v2 {
 }
 
 .doc-box-view {
-  border: 3px solid #5fd2eb;
+  border: 3px solid #902719;
   border-radius: 10px;
   max-width: 360px;
   text-align: center;
@@ -1786,11 +1782,9 @@ div#shopify-section-header--v2 {
 }
 
 #Tab_section {
-  background: url(//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/tab-bg-img.png?v=1632608735);
+  background: url(./images/bg-dark-removebg-preview.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  padding: 130px 0 180px;
+  background-position: right;
 }
 
 .tab-content .primary_color {
@@ -1801,21 +1795,14 @@ div#shopify-section-header--v2 {
 }
 
 .site__footer_main .site__footer:nth-child(1) {
-  width: 33%;
+  width: 50%;
   float: left;
 }
 
 .site__footer_main .site__footer:nth-child(2) {
-  width: 27%;
+  width: 50%;
   float: left;
   padding-left: 5%;
-}
-
-.site__footer_main .site__footer:nth-child(3) {
-  width: 40%;
-  float: left;
-  padding-left: 3.8%;
-  border-left: 1px solid #071518;
 }
 
 .site-footer__newsletter {
@@ -2112,7 +2099,7 @@ label.label-text {
 
 .contact_form_class:after {
   content: '';
-  background: url(//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/reward-right.png?v=1632763643);
+  background: url(./images/time-hand.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -2126,7 +2113,7 @@ label.label-text {
 
 .reward-wallet .container:before {
   content: '';
-  background: url(//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/reward-right.png?v=1632763643);
+  background: url(./images/time-stone-transparent.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -2139,7 +2126,7 @@ label.label-text {
 
 .reward-wallet .container:after {
   content: '';
-  background: url(//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/reward-right.png?v=1632763643);
+  background: url(./images/time-hand.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -2153,7 +2140,7 @@ label.label-text {
 
 .feature_row_block_card:after {
   content: '';
-  background: url(//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/dog-pwa.png?v=1632761081);
+  background: url(./images/time-stone-transparent.png);
   background-repeat: no-repeat;
   display: block;
   width: 80px;
@@ -2564,15 +2551,9 @@ h3.footer-title.write-us {
     align-items: center;
   }
 
-  .hero_bg_color {
-    /* padding-top: 0; */
-  }
-
   .hero_section {
     padding-top: 80px;
   }
-
-  .hero_column .richtext.white_color p {}
 
   .site-header__menu {
     display: block;
@@ -2687,11 +2668,6 @@ h3.footer-title.write-us {
     min-width: 50%;
     padding: 0 12px;
     margin-bottom: 25px;
-  }
-
-  /*                 .button_group_section li:nth-child(3){display:none;} */
-  .hero_section {
-    background-image: url('//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/hero-bg-mobile.png?v=1632855987');
   }
 
   #About_section {
@@ -3309,12 +3285,10 @@ h3.footer-title.write-us {
   width: 190px;
   display: block;
   margin: auto;
-  margin-top: -35px;
 }
 
 .certikLogo:hover {
-  background-color: white;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 10px #902719;
 }
 
 .certikLogo-mobile {
