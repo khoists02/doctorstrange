@@ -1366,7 +1366,7 @@ body.template-page.privacy-policy .site__footer_main .site__footer:nth-child(2) 
 }
 
 .main-content {
-  padding-top: 110px;
+  /* padding-top: 110px; */
 }
 
 .atc-sticky {
