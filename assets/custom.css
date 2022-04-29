@@ -866,7 +866,7 @@ textarea:focus {
   display: inline-block;
   transition: all .3s;
   border: 2px solid #902719;
-  color: #902719;
+  color: #ffffff;
   min-width: 100%;
   text-align: center;
 }
@@ -1356,7 +1356,7 @@ footer .social_icons_list_icon a {
   display: none !important;
 }
 
-.roadmap_tab_content ul li:before {
+/* .roadmap_tab_content ul li:before {
   content: "\f00c";
   position: absolute;
   left: -20px;
@@ -1364,7 +1364,7 @@ footer .social_icons_list_icon a {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #902719;
-}
+} */
 
 .roadmap_tab_content ul li {
   position: relative;
@@ -1582,8 +1582,14 @@ h6 {
 /*Kalp s.*/
 
 
+.tokenomics_card h2 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+}
+
 .tokenomics_card h5 {
-  font-size: 26px;
+  font-size: 18px;
   color: #fff;
   font-weight: 500;
 }
@@ -1604,7 +1610,7 @@ div#shopify-section-header--v2 {
 }
 
 .hero_section {
-  background: url('./images/bg_primary-removebg.png');
+  background: url(./images/bg-primary.jpeg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -1637,7 +1643,7 @@ div#shopify-section-header--v2 {
   margin: 0 auto;
   font-weight: normal;
   line-height: 21px;
-  color: #727272;
+  color: #ffffff;
 }
 
 /* .feature_row_block_card {
@@ -1684,11 +1690,10 @@ div#shopify-section-header--v2 {
 
 .feature_row_with_video_section_inner {
   content: '';
-  /* background: url('//cdn.shopify.com/s/files/1/0388/4833/1916/t/35/assets/our-document-bg.jpg?v=1632604372'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 130px 0 80px;
+  padding: 50px 0 80px;
 }
 
 .feature_row_with_video_section_start {
@@ -1788,7 +1793,7 @@ div#shopify-section-header--v2 {
 }
 
 .tab-content .primary_color {
-  color: #000;
+  color: #902719;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -2312,7 +2317,7 @@ h3.footer-title.write-us {
 }
 
 .footer-logo img {
-  max-width: 173px;
+  max-width: 250px;
 }
 
 @media(min-width:992px) {
@@ -2935,7 +2940,7 @@ h3.footer-title.write-us {
 
   .accordian_link {
     padding: 12px 25px;
-    background: #2bb3d2;
+    background: #902719;
     border: 0 solid #fff;
     box-sizing: border-box;
     border-radius: 30px;
@@ -3301,7 +3306,6 @@ h3.footer-title.write-us {
 }
 
 .certikLogo-footer:hover {
-  background-color: #0ab5db;
   box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
 }
 
