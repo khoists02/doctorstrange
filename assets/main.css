@@ -2518,6 +2518,22 @@ pre {
   .road {
     margin-left: 0;
   }
+
+  .tokenomics_card {
+    padding: 0 !important;
+  }
+
+  .tokenomics_card img {
+    height: auto !important;
+  }
+
+  .tokenomics_card > .row {
+    padding: 0 !important;
+  }
+
+  .order-3  {
+    padding: 0 !important;
+  }
 }
 
 .road {
