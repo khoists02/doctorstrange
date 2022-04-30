@@ -2474,6 +2474,41 @@ pre {
 
   .list-items {
     margin-bottom: 20px;
+
+  }
+
+  .list-items img {
+    max-width: 300px;
+  }
+
+  .tab_main_section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+
+  .tab_main_section .col-md-9 {
+    padding-left: 0;
+  }
+
+  .tab_main_section .col-md-3 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+
+  .button_group_section_inner ul  {
+    flex-direction: column;
+  }
+
+  .button_group_section_inner ul li {
+    flex: 1;
+  }
+
+  .button_group_section_inner {
+    margin-top: 20px;
   }
 }
 
@@ -2517,4 +2552,8 @@ a {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.list-items {
+  box-shadow: 4px 0 30px #902719;
 }
