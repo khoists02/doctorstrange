@@ -2510,6 +2510,18 @@ pre {
   .button_group_section_inner {
     margin-top: 20px;
   }
+
+  #Tab_section {
+    margin-right: 0;
+  }
+
+  .road {
+    margin-left: 0;
+  }
+}
+
+.road {
+  margin-left: -25% !important;
 }
 
 a {
@@ -2556,4 +2568,5 @@ a {
 
 .list-items {
   box-shadow: 4px 0 30px #902719;
+  height: 70px;
 }

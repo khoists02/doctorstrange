@@ -1789,7 +1789,8 @@ div#shopify-section-header--v2 {
 #Tab_section {
   background: url(./images/bg-dark-removebg-preview.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  margin-right: -25%;
 }
 
 .tab-content .primary_color {
